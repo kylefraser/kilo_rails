@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def case
   end
+
+  def admin
+  end
 end
