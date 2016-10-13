@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161012230359) do
+ActiveRecord::Schema.define(version: 20161013191528) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "project_title"
@@ -37,8 +37,40 @@ ActiveRecord::Schema.define(version: 20161012230359) do
     t.text     "section_text_6"
     t.string   "section_header_7"
     t.text     "section_text_7"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "image_1_file_name"
+    t.string   "image_1_content_type"
+    t.integer  "image_1_file_size"
+    t.datetime "image_1_updated_at"
+    t.string   "image_2_file_name"
+    t.string   "image_2_content_type"
+    t.integer  "image_2_file_size"
+    t.datetime "image_2_updated_at"
+    t.string   "image_3_file_name"
+    t.string   "image_3_content_type"
+    t.integer  "image_3_file_size"
+    t.datetime "image_3_updated_at"
+    t.string   "image_4_file_name"
+    t.string   "image_4_content_type"
+    t.integer  "image_4_file_size"
+    t.datetime "image_4_updated_at"
+    t.string   "image_5_file_name"
+    t.string   "image_5_content_type"
+    t.integer  "image_5_file_size"
+    t.datetime "image_5_updated_at"
+    t.string   "image_6_file_name"
+    t.string   "image_6_content_type"
+    t.integer  "image_6_file_size"
+    t.datetime "image_6_updated_at"
+    t.string   "video_file_name"
+    t.string   "video_content_type"
+    t.integer  "video_file_size"
+    t.datetime "video_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

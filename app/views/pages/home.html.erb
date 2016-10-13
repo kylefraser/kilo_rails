@@ -28,7 +28,7 @@
     <div class="innerWork">
       <h1>Examples of projects I've worked on:</h1>
       <% Project.all.each do |project| %>
-      <div class="workSquare"><%=image_tag("orangeguitar.jpg")%>
+      <div class="workSquare"><%= image_tag project.image %>
         <%= link_to project do %><div class="case-button button">
           <p><%= project.project_title %></p>
         </div><% end %>

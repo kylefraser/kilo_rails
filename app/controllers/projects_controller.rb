@@ -57,6 +57,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:project_title, :primary_color, :secondary_color_1, :secondary_color_2, :secondary_color_3, :secondary_color_4, :title, :title_short, :sub_title, :description, :section_header_1, :section_text, :section_header_2, :section_text_2, :section_header_3, :section_text_3, :section_header_4, :section_text_4, :section_header_5, :section_text_5, :section_header_6, :section_text_6, :section_header_7, :section_text_7)
+      params.require(:project).permit(:video, :image, :image_1, :image_2, :image_3, :image_4, :image_5, :image_6, :project_title, :primary_color, :secondary_color_1, :secondary_color_2, :secondary_color_3, :secondary_color_4, :title, :title_short, :sub_title, :description, :section_header_1, :section_text, :section_header_2, :section_text_2, :section_header_3, :section_text_3, :section_header_4, :section_text_4, :section_header_5, :section_text_5, :section_header_6, :section_text_6, :section_header_7, :section_text_7)
     end
 end

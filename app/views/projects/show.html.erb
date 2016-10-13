@@ -16,13 +16,13 @@
     </div>
   </div>
   <div id="video">
-    <video src="img/orange.mp4#t=10" autoplay="true" muted loop class="video"></video>
+    <%= video_tag(@project.video, width: '100%', autoplay: true, muted: true, loop: true, class: "video" ) %>
   </div>
   <div id="mainSection">
     <div class="main-container">
       <h4 class="section-title"><%= @project.section_header_1 %></h4>
       <p class="section-text"><%= @project.section_text %></p>
-      <div class="medium-image-container"><img src="img/th100.png" class="medium-image"></div>
+      <div class="medium-image-container"><%= image_tag(@project.image_1, class: "medium-image")%></div>
       <div class="section-text-container">
         <h4 class="section-title"><%= @project.section_header_2 %></h4>
         <p class="section-text"><%= @project.section_text_2 %></p>
