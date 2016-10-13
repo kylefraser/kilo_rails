@@ -54,14 +54,12 @@ GEM
       execjs
     av (0.9.0)
       cocaine (~> 0.5.3)
-    aws-sdk (2.0.48)
-      aws-sdk-resources (= 2.0.48)
-    aws-sdk-core (2.0.48)
-      builder (~> 3.0)
+    aws-sdk (2.6.6)
+      aws-sdk-resources (= 2.6.6)
+    aws-sdk-core (2.6.6)
       jmespath (~> 1.0)
-      multi_json (~> 1.0)
-    aws-sdk-resources (2.0.48)
-      aws-sdk-core (= 2.0.48)
+    aws-sdk-resources (2.6.6)
+      aws-sdk-core (= 2.6.6)
     bcrypt (3.1.11)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
@@ -212,7 +210,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk (~> 2.0.22)
+  aws-sdk (~> 2.3)
   bootstrap-sass
   byebug
   coffee-rails (~> 4.2)
