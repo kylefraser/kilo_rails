@@ -24,10 +24,10 @@
         <p>View Toolkit</p>
       </div></a>
   </div>
-  <% Project.all.each do |project| %>
   <div id="work">
     <div class="innerWork">
       <h1>Examples of projects I've worked on:</h1>
+      <% Project.all.each do |project| %>
       <div class="workSquare"><%=image_tag("orangeguitar.jpg")%>
         <%= link_to project do %><div class="case-button button">
           <p><%= project.project_title %></p>
@@ -64,9 +64,9 @@
           <h3>This is an example project of my previous work.</h3>
         </div>
       </div>
+      <% end %>
     </div>
   </div>
-  <% end %>
   <div id="about">
     <div class="tree-container"><i aria-hidden="true" class="dirigo fa fa-tree"></i></div>
     <div class="innerAbout">
