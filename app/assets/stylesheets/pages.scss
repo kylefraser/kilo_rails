@@ -174,7 +174,7 @@
   display: block;
 }
 .button-case {
-  border: 2px solid #fd7123;
+  border: 2px solid #222;
   box-sizing: border-box;
   height: 50px;
   margin: 40px auto;
@@ -184,7 +184,7 @@
   width: 120px;
 }
 .button-case p {
-  color: #fd7123;
+  color: #222;
   font-family: 'Rubik', sans-serif;
   font-size: 0.75em;
   font-weight: 700;
@@ -196,7 +196,8 @@
   transition: all 0.2s;
 }
 .button-case:hover {
-  background-color: #fd7123;
+  border-color: #222;
+  background-color: #222;
 }
 .button-case:hover p {
   color: #fff;

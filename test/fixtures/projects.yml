@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_title: MyString
+  primary_color: MyString
+  secondary_color_1: MyString
+  secondary_color_2: MyString
+  secondary_color_3: MyString
+  secondary_color_4: MyString
+  title: MyString
+  title_short: MyString
+  sub_title: MyString
+  description: MyString
+  section_header_1: MyString
+  section_text: MyText
+  section_header_2: MyString
+  section_text_2: MyText
+  section_header_3: MyString
+  section_text_3: MyText
+  section_header_4: MyString
+  section_text_4: MyText
+  section_header_5: MyString
+  section_text_5: MyText
+  section_header_6: MyString
+  section_text_6: MyText
+  section_header_7: MyString
+  section_text_7: MyText
+
+two:
+  project_title: MyString
+  primary_color: MyString
+  secondary_color_1: MyString
+  secondary_color_2: MyString
+  secondary_color_3: MyString
+  secondary_color_4: MyString
+  title: MyString
+  title_short: MyString
+  sub_title: MyString
+  description: MyString
+  section_header_1: MyString
+  section_text: MyText
+  section_header_2: MyString
+  section_text_2: MyText
+  section_header_3: MyString
+  section_text_3: MyText
+  section_header_4: MyString
+  section_text_4: MyText
+  section_header_5: MyString
+  section_text_5: MyText
+  section_header_6: MyString
+  section_text_6: MyText
+  section_header_7: MyString
+  section_text_7: MyText

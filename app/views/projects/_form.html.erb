@@ -1,0 +1,137 @@
+<%= form_for(project) do |f| %>
+  <% if project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :project_title %>
+    <%= f.text_field :project_title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title_short %>
+    <%= f.text_field :title_short %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sub_title %>
+    <%= f.text_field :sub_title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :primary_color %>
+    <%= f.text_field :primary_color %>
+  </div>
+
+  <div class="field">
+    <%= f.label :secondary_color_1 %>
+    <%= f.text_field :secondary_color_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :secondary_color_2 %>
+    <%= f.text_field :secondary_color_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :secondary_color_3 %>
+    <%= f.text_field :secondary_color_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :secondary_color_4 %>
+    <%= f.text_field :secondary_color_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_header_1 %>
+    <%= f.text_field :section_header_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_text %>
+    <%= f.text_area :section_text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_header_2 %>
+    <%= f.text_field :section_header_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_text_2 %>
+    <%= f.text_area :section_text_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_header_3 %>
+    <%= f.text_field :section_header_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_text_3 %>
+    <%= f.text_area :section_text_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_header_4 %>
+    <%= f.text_field :section_header_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_text_4 %>
+    <%= f.text_area :section_text_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_header_5 %>
+    <%= f.text_field :section_header_5 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_text_5 %>
+    <%= f.text_area :section_text_5 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_header_6 %>
+    <%= f.text_field :section_header_6 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_text_6 %>
+    <%= f.text_area :section_text_6 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_header_7 %>
+    <%= f.text_field :section_header_7 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :section_text_7 %>
+    <%= f.text_area :section_text_7 %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

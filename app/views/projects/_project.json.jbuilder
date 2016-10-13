@@ -1,0 +1,2 @@
+json.extract! project, :id, :project_title, :primary_color, :secondary_color_1, :secondary_color_2, :secondary_color_3, :secondary_color_4, :title, :title_short, :sub_title, :description, :section_header_1, :section_text, :section_header_2, :section_text_2, :section_header_3, :section_text_3, :section_header_4, :section_text_4, :section_header_5, :section_text_5, :section_header_6, :section_text_6, :section_header_7, :section_text_7, :created_at, :updated_at
+json.url project_url(project, format: :json)

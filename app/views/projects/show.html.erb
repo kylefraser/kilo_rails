@@ -1,0 +1,62 @@
+<div id="contain">
+  <div id="headerCase">
+    <div class="menu-icon-container">
+      <%= link_to 'javascript:history.go(-1);' do %>
+      <i id="tree-button" class="menu-icon fa fa-tree"></i>
+      <% end %>
+    </div>
+    <div class="diagonal-container">
+      <div class="fat-stripe" style="border-color:<%= @project.primary_color %>;"></div>
+      <div class="thin-stripe" style="border-color:<%= @project.primary_color %>;"></div>
+    </div>
+    <div class="inner-Header-Case">
+      <h1 class="header-title"><%= @project.project_title %></h1>
+      <h1><%= @project.title %></h1>
+      <h2><%= @project.sub_title %></h2>
+    </div>
+  </div>
+  <div id="video">
+    <video src="img/orange.mp4#t=10" autoplay="true" muted loop class="video"></video>
+  </div>
+  <div id="mainSection">
+    <div class="main-container">
+      <h4 class="section-title"><%= @project.section_header_1 %></h4>
+      <p class="section-text"><%= @project.section_text %></p>
+      <div class="medium-image-container"><img src="img/th100.png" class="medium-image"></div>
+      <div class="section-text-container">
+        <h4 class="section-title"><%= @project.section_header_2 %></h4>
+        <p class="section-text"><%= @project.section_text_2 %></p>
+      </div>
+      <div class="section-text-container">
+        <h4 class="section-title"><%= @project.section_header_3 %></h4>
+        <p class="section-text"><%= @project.section_text_3 %></p>
+      </div>
+      <div class="medium-image-container"> <img src="http://placehold.it/900x600" class="medium-image"></div>
+      <div class="section-text-container">
+        <h4 class="section-title"><%= @project.section_header_4 %></h4>
+        <p class="section-text"><%= @project.section_text_4 %></p>
+      </div>
+      <div class="swatch-container">
+        <div class="swatch" style="background-color:<%= @project.secondary_color_1 %>;">
+          <p class="swatch-text"><%= @project.secondary_color_1 %></p>
+        </div>
+        <div class="swatch" style="background-color:<%= @project.primary_color %>;">
+          <p class="swatch-text"><%= @project.primary_color %></p>
+        </div>
+        <div class="swatch white-bg" style="background-color:<%= @project.secondary_color_2 %>;">
+          <p class="swatch-text"><%= @project.secondary_color_2 %></p>
+        </div>
+      </div>
+      <h4 class="section-title"><%= @project.section_header_5 %></h4>
+      <p class="section-text"><%= @project.section_text_5 %></p>
+      <a href="#">
+        <div class="button-case">
+          <p>View Live</p>
+        </div>
+      </a>
+      <h4 class="section-title"><%= @project.section_header_6 %></h4>
+      <div class="medium-image-container"> <img src="http://placehold.it/900x600" class="medium-image"></div>
+      <div class="medium-image-container"> <img src="http://placehold.it/900x600" class="medium-image"></div>
+    </div>
+  </div>
+</div>

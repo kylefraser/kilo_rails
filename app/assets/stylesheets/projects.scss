@@ -1,0 +1,56 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+form {
+  margin-left: 120px;
+}
+
+.field {
+  float: left;
+  margin: 30px;
+}
+
+label {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+input[type=text] {
+  display: block;
+  height: 40px;
+  width: 500px;
+}
+
+textarea {
+  display: block;
+  height: 40px;
+  width: 500px;
+}
+
+input[type=submit]{
+  color: #fff;
+  background-color: #333333;
+  border-color: #333333;
+  display: block;
+  margin: 50px auto;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  user-select: none;
+  width: 200px;
+  height: 60px;
+}
+
+.project_header {
+  text-align: center;
+}
