@@ -28,43 +28,19 @@
     <div class="innerWork">
       <h1>Examples of projects I've worked on:</h1>
       <% Project.all.each do |project| %>
-      <div class="workSquare"><%= image_tag project.image %>
-        <%= link_to project do %><div class="case-button button">
-          <p><%= project.project_title %></p>
-        </div><% end %>
-        <div class="workSquare-text-container">
-          <h1><%= project.title_short %></h1>
-          <h3><%= project.description %></h3>
-        </div>
-      </div>
-      <div class="workSquare"><img src="http://placehold.it/475x425">
-        <div class="case-button button">
-          <p>Case Study</p>
-        </div>
-        <div class="workSquare-text-container">
-          <h1>Orange</h1>
-          <h3>This is an example project of my previous work. This is an example project of my previous work.</h3>
-        </div>
-      </div>
-      <div class="workSquare"><img src="http://placehold.it/475x425">
-        <div class="case-button button">
-          <p>Case Study</p>
-        </div>
-        <div class="workSquare-text-container">
-          <h1>Orange</h1>
-          <h3>This is an example project of my previous work.</h3>
-        </div>
-      </div>
-      <div class="workSquare"><img src="http://placehold.it/475x425">
-        <div class="case-button button">
-          <p>Case Study</p>
-        </div>
-        <div class="workSquare-text-container">
-          <h1>Orange</h1>
-          <h3>This is an example project of my previous work.</h3>
-        </div>
-      </div>
-      <% end %>
+        <% if ! (project.blank?) %>
+          <div class="workSquare"><%= image_tag project.image %>
+            <%= link_to project do %><div class="case-button button">
+              <p><%= project.project_title %></p>
+            </div>
+            <% end %>
+            <div class="workSquare-text-container">
+              <h1><%= project.title_short %></h1>
+              <h3><%= project.description %></h3>
+            </div>
+          </div>
+        <% end %>
+      <% end %>    
     </div>
   </div>
   <div id="about">
