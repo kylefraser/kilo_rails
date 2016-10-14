@@ -37,15 +37,31 @@
         <p class="section-text"><%= @project.section_text_4 %></p>
       </div>
       <div class="swatch-container">
+        <% if ! (@project.secondary_color_1.blank?) %>
         <div class="swatch" style="background-color:<%= @project.secondary_color_1 %>;">
           <p class="swatch-text"><%= @project.secondary_color_1 %></p>
         </div>
+        <% end %>
+        <% if ! (@project.primary_color.blank?) %>
         <div class="swatch" style="background-color:<%= @project.primary_color %>;">
           <p class="swatch-text"><%= @project.primary_color %></p>
         </div>
+        <% end %>
+        <% if ! (@project.secondary_color_2.blank?) %>
         <div class="swatch white-bg" style="background-color:<%= @project.secondary_color_2 %>;">
           <p class="swatch-text"><%= @project.secondary_color_2 %></p>
         </div>
+        <% end %>
+        <% if ! (@project.secondary_color_3.blank?) %>
+        <div class="swatch" style="background-color:<%= @project.secondary_color_3 %>;">
+          <p class="swatch-text"><%= @project.secondary_color_3 %></p>
+        </div>
+        <% end %>
+        <% if ! (@project.secondary_color_4.blank?) %>
+        <div class="swatch" style="background-color:<%= @project.secondary_color_4 %>;">
+          <p class="swatch-text"><%= @project.secondary_color_4 %></p>
+        </div>
+        <% end %>
       </div>
       <h4 class="section-title"><%= @project.section_header_5 %></h4>
       <p class="section-text"><%= @project.section_text_5 %></p>
